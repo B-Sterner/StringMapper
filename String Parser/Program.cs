@@ -1,32 +1,34 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-using BenchmarkDotNet.Running;
-using Microsoft.Diagnostics.Runtime.Utilities;
+﻿using BenchmarkDotNet.Running;
 using String_Parser;
-using System.Security.Cryptography.X509Certificates;
 
 
-//BenchmarkRunner.Run<MessageParser>();
+ConsoleKey? userInputKey = null;
 
-var stringParser = new MessageParser();
-var result = stringParser.ParseString();
-var result2 = stringParser.ParseStringWithSpan();
+while (userInputKey != ConsoleKey.Escape)
+{
+    UserInterface.WelcomeText();
+    userInputKey = Console.ReadKey().Key;
+
+    if(userInputKey == ConsoleKey.Enter)
+    {
+        Console.WriteLine("\n");
+        UserInterface.DisplayResults();
+
+        Console.WriteLine("\n");
+        UserInterface.DisplayWithSpanResults();
+    }
+    else if (userInputKey == ConsoleKey.B)
+    {
+        Console.WriteLine("\n");
+        BenchmarkRunner.Run<BenchMark_StringMapper>();
+    }
+    else
+    {
+        Console.WriteLine(" is Not valid");
+    }
+    Console.WriteLine("\n");
+}
+
+Environment.Exit(0);
 
 
-Console.WriteLine(result.Val1);
-Console.WriteLine(result.Val2);
-Console.WriteLine(result.Val3);
-Console.WriteLine(result.Val4);
-Console.WriteLine(result.DecVal);
-Console.WriteLine(result.IsEnabled);
-
-Console.WriteLine("");
-
-Console.WriteLine(result2.Val1);
-Console.WriteLine(result2.Val2);
-Console.WriteLine(result2.Val3);
-Console.WriteLine(result2.Val4);
-Console.WriteLine(result2.DecVal);
-Console.WriteLine(result2.IsEnabled);
