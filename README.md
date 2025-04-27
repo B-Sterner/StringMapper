@@ -1,8 +1,12 @@
-## Background
+## reson for public view
+I was cleaning out my emails Thursday night (24Apr25). I saw that I had a rejection letter from a company that I had applied to about 7 months back. I had thought the company had just ghosted me, but their email was just not in my primary inbox. I prepared a proof-of-concept, in case I was interviewed. After seeing I was reached out to -- even though rejected -- I decided to share this with one of the personnel I spoke with.
 
+As I never had an opportunity to discuss it, I am not sure if this was off target or potentially good.
+
+## Background
 Based on a conversation, I made a primitive proof-of-concept for how one could map a string to an object. In the conversation, it was stated that a string containing value pairs and single keywords would be received at intervals. These values/keywords would be parsed out and then used. 
 
-If I recall correctly, there was a group of if statements looking for specific tokens to parse out and make decisions based on that.
+If I recall correctly, there was a large group of if statements looking for specific tokens to parse out and make decisions based on that. It looked cumbersome.
 
 ## Proof of Concept
 Note: I did not get specifics on the format of the string. And they did not have access to all C# language options – reduced set or old, I do not recall why.
