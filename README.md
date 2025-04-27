@@ -44,7 +44,7 @@ The string is per line for easier human reading. I added some spacing issues to 
             Notneeded15: Notneeded5;
             NotNeededKeyword11;
 ## Model
-Based on the model in the demo the middle portion of the data string is captured. If one wants to capture another portion of the data string, add another property that matches the name as the key or keyword and the parser will map to it.
+Based on the model in the demo, the middle portion of the data string is captured. The mapper will map to property names that have the same name as a key/keyword name. Hence, to capture another portion, add a property using the key/keyword name.
 
 ## performance
 <img width="842" alt="image" src="https://github.com/user-attachments/assets/2165cf66-8470-419b-bd18-4ed7cd66c7d2" />
