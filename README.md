@@ -1,5 +1,5 @@
-## reson for public view
-I was cleaning out my emails Thursday night (24Apr25). I saw that I had a rejection letter from a company that I had applied to about 7 months back. I had thought the company had just ghosted me, but their email was just not in my primary inbox. I prepared a proof-of-concept, in case I was interviewed. After seeing I was reached out to -- even though rejected -- I decided to share this with one of the personnel I spoke with.
+## Reason for public view
+I was cleaning out my emails Thursday night (24 Apr 25). I saw that I had a rejection letter from a company that I had applied to about 8 months back. I had thought the company had just ghosted me, but their email was just not in my primary inbox. I prepared a proof-of-concept, in case I was interviewed. After seeing I was reached out to -- even though rejected -- I decided to share this with one of the personnel I spoke with.
 
 As I never had an opportunity to discuss it, I am not sure if this was off target or potentially good.
 
