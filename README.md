@@ -54,9 +54,9 @@ Based on the model in the demo, the middle portion of the data string is capture
 
 ## Assumptions - There were many
 I chose a semi-colon for a token separator and an equals sign for a kay value separator. These can be changed though. Also, one could implement regex if the tokens need more advanced logic.
-The IsEnabled is set from two other properties in the model. One looks for “Enabled” while the other “Disbaled”. Basically using IsEnabled as a backing field for a keyword that indicates whether the device is enabled/disabled. This was added to account for when a single keyword indicated the status of something.
+The IsEnabled is set from two other properties in the model. One looks for “Enabled” keyword while the other the “Disbaled” keyword. Basically IsEnabled is used as a backing field for a keyword that indicates whether the device is enabled/disabled. This was added to account for when a single keyword indicated the status of something.
 
 In slight contrast, DecVal uses a setter to round a decimal and then returns a backing field with the rounded value. This is pulled from a key value pair.
 
-The other model properties are just straight forward. 
+The other model properties are straight forward. 
 
