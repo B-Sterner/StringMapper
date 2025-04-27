@@ -13,14 +13,14 @@ public class BenchMark_StringMapper
     [Benchmark(Baseline = true)]
     public DataMessageModel ParseString()
     {
-        var stringMapper = new StringMapper(dataString);
+        var stringMapper = new StringMapper(dataString, ";", "=");
         return stringMapper.ParseString();
     }
 
     [Benchmark]
     public DataMessageModel ParseStringWithSpan()
     {
-        var stringMapperWithSpan = new StringMapper(dataString);
+        var stringMapperWithSpan = new StringMapper(dataString, ";", "=");
         return stringMapperWithSpan.ParseStringWithSpan();
     }
 }

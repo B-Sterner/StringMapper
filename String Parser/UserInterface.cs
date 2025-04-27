@@ -14,7 +14,7 @@ class UserInterface
 
     public static void DisplayResults()
     {
-        var stringMapper = new StringMapper(ExampleDataString());
+        var stringMapper = new StringMapper(ExampleDataString(), ";", "=");
         var dataMessage = stringMapper.ParseString();
 
         Console.WriteLine("== Without Span ==");
@@ -29,7 +29,7 @@ class UserInterface
 
     public static void DisplayWithSpanResults()
     {
-        var stringMapperWithSpan = new StringMapper(ExampleDataString());
+        var stringMapperWithSpan = new StringMapper(ExampleDataString(), ";", "=");
         var dataMessageFromSpan = stringMapperWithSpan.ParseStringWithSpan();
 
         Console.WriteLine($"== Using Span ==");
@@ -52,12 +52,12 @@ class UserInterface
             Notneeded5: Notneeded5;
             NotNeededKeyword1;
             
-            Val1=ok1; 
-            Val2='ok2';
-            Val3=dog;
-            Val4=here;
+            Val1=no quote; 
+            Val2='with quote';
+            Val3=val3;
+            Val4= val4;
             StringProp1='I am a longer string';
-            StringProp2=  another string;
+            StringProp2  =  another string;
             BoolVal1= false;
             BoolVal2= true;
             IntVal1=36;  
